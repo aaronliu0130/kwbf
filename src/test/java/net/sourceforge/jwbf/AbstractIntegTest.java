@@ -95,5 +95,10 @@ public abstract class AbstractIntegTest {
         log.warn("unknown type: " + request.getClass().getCanonicalName());
       }
     }
+
+    @Override
+    public boolean isQuiet() {
+      return false;
+    }
   }
 }
