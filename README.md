@@ -9,7 +9,7 @@ The Java Wiki Bot Framework is a library to retrieve data from and maintain
 [MediaWiki-based wikis](http://www.mediawiki.org) such as Wikipedia. It has
 packages that handle basic tasks (login, cookies, encoding, token management)
 so that you can write your wiki bot without being a MediaWiki API expert. JWBF
-requires JRE 1.7.
+requires Java 11.
 
 
 ## Code sample
