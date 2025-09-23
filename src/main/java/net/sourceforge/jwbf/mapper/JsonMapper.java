@@ -2,7 +2,7 @@ package net.sourceforge.jwbf.mapper;
 
 import java.io.IOException;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

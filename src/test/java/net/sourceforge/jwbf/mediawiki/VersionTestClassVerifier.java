@@ -12,8 +12,8 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.annotation.Nullable;
-import javax.inject.Provider;
+import jakarta.annotation.Nullable;
+import jakarta.inject.Provider;
 
 import org.junit.Assert;
 import org.junit.Assume;

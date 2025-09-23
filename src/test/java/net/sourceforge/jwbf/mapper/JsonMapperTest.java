@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import org.junit.Before;
 import org.junit.Test;

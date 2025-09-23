@@ -2,8 +2,8 @@ package net.sourceforge.jwbf.mediawiki.bots;
 
 import java.net.URL;
 
-import javax.annotation.Nonnull;
-import javax.inject.Inject;
+import jakarta.annotation.Nonnull;
+import jakarta.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

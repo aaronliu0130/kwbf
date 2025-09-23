@@ -2,7 +2,7 @@ package net.sourceforge.jwbf.core.actions;
 
 import static java.util.Map.Entry;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;

@@ -3,7 +3,7 @@ package net.sourceforge.jwbf.mediawiki;
 import java.util.Map;
 
 import javax.annotation.CheckForNull;
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

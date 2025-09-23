@@ -5,13 +5,13 @@ import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.List;
 
-import javax.annotation.Nullable;
-import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
+import jakarta.annotation.Nullable;
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
 
 import org.eclipse.jetty.server.NetworkConnector;
 import org.eclipse.jetty.server.Request;
@@ -169,7 +169,7 @@ public class JettyServer extends Server implements AutoCloseable {
       if (false
           && request.getContentType() != null
           && request.getContentType().startsWith("multipart/form-data")) {
-        req.setAttribute(Request.MULTIPART_CONFIG_ELEMENT, MULTI_PART_CONFIG);
+        req.setAttribute("jakarta.servlet.multipartConfig", MULTI_PART_CONFIG);
         writer //
             .println(
             joiner.join(

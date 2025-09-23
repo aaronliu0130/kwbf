@@ -4,7 +4,7 @@ import java.nio.charset.Charset;
 import java.util.Objects;
 
 import javax.annotation.CheckReturnValue;
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import javax.annotation.meta.When;
 
 import com.google.common.base.Charsets;

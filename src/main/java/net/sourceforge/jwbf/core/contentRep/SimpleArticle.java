@@ -23,7 +23,7 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 import com.google.common.annotations.Beta;
 import com.google.common.annotations.VisibleForTesting;

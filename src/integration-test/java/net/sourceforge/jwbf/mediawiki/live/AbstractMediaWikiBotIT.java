@@ -2,7 +2,7 @@ package net.sourceforge.jwbf.mediawiki.live;
 
 import static net.sourceforge.jwbf.TestHelper.assumeReachable;
 
-import javax.inject.Provider;
+import jakarta.inject.Provider;
 
 import com.google.common.annotations.VisibleForTesting;
 

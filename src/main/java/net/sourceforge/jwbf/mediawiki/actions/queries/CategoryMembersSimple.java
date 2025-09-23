@@ -20,7 +20,7 @@ package net.sourceforge.jwbf.mediawiki.actions.queries;
 
 import java.util.Iterator;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

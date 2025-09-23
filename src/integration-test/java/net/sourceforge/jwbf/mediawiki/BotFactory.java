@@ -2,8 +2,8 @@ package net.sourceforge.jwbf.mediawiki;
 
 import java.util.concurrent.TimeUnit;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import org.mockito.Mockito;
 import org.slf4j.Logger;

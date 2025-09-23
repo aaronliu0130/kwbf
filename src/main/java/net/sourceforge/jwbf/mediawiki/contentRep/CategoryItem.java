@@ -20,7 +20,7 @@ package net.sourceforge.jwbf.mediawiki.contentRep;
 
 import java.util.Objects;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import com.google.common.base.MoreObjects;
 

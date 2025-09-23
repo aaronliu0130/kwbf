@@ -3,7 +3,7 @@ package net.sourceforge.jwbf.mapper;
 import java.util.List;
 
 import javax.annotation.CheckForNull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;

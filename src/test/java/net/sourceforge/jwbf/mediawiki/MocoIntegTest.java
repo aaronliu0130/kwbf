@@ -8,8 +8,8 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.annotation.Nonnull;
-import javax.inject.Provider;
+import jakarta.annotation.Nonnull;
+import jakarta.inject.Provider;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
