@@ -34,7 +34,6 @@ public class WatchListIntegTest extends AbstractIntegTest {
           .build();
 
   @Test
-  @Ignore // TODO remove
   public void test() {
     // GIVEN
     server.request(loginSuccess).response(TestHelper.anyWikiResponse("login_valid.xml"));
@@ -52,7 +51,14 @@ public class WatchListIntegTest extends AbstractIntegTest {
     ImmutableList<WatchResponse> resultList = testee.getCopyOf(3);
 
     // THEN
-    ImmutableList<WatchResponse> expected = ImmutableList.of(); // TODO fill this list
+    ImmutableList<WatchResponse> expected = ImmutableList.of(
+        new WatchResponse(0, "Revenge (TV series)", null, null, null, null, null, 31808292,
+            641213576, 641162910, 0, 0, false, "edit", false, false, false, false),
+        new WatchResponse(4, "Wikipedia:Reference desk/Language", null, null, null, null, null,
+            2515121, 641213194, 641195380, 0, 0, false, "edit", false, false, false, false),
+        new WatchResponse(4, "Wikipedia:Reference desk/Humanities", null, null, null, null, null,
+            2535875, 641211705, 641208678, 0, 0, false, "edit", false, false, false, false)
+    );
     GAssert.assertEquals(expected, resultList);
   }
 }

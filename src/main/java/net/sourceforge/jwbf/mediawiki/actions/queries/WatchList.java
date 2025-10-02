@@ -31,6 +31,7 @@ import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot;
  * @author Rabah Meradi.
  */
 // TODO add public if a working test and integration test (IT) is present
+// TODO: implement loginfo fields
 class WatchList extends BaseQuery<WatchResponse> {
 
   static String formatDate(Date date) {

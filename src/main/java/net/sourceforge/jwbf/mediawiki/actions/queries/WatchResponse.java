@@ -44,11 +44,11 @@ public class WatchResponse {
       @JsonProperty("comment") String comment,
       @JsonProperty("parsedcomment") String parsedComment,
       @JsonProperty("timestamp") //
-          @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss'Z'") //
-          Date timestamp,
+      @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss'Z'") //
+      Date timestamp,
       @JsonProperty("notificationtimestamp") //
-          @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss'Z'") //
-          Date notificationTimestamp,
+      @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss'Z'") //
+      Date notificationTimestamp,
       @JsonProperty("pageid") int pageid,
       @JsonProperty("revid") int revid,
       @JsonProperty("old_revid") int oldRevid,
@@ -56,10 +56,10 @@ public class WatchResponse {
       @JsonProperty("newlen") int newLen,
       @JsonProperty("patrolled") boolean patrolled,
       @JsonProperty("type") String type,
-      @JsonProperty("anon") String anon,
-      @JsonProperty("minor") String minor,
-      @JsonProperty("bot") String bot,
-      @JsonProperty("new") String newFlag) {
+      @JsonProperty("anon") boolean anon,
+      @JsonProperty("minor") boolean minor,
+      @JsonProperty("bot") boolean bot,
+      @JsonProperty("new") boolean newFlag) {
     this.ns = ns;
     this.title = title;
     this.user = user;
@@ -74,10 +74,10 @@ public class WatchResponse {
     this.newLen = newLen;
     this.patrolled = patrolled;
     this.type = getEditType(type);
-    this.anon = anon != null;
-    this.minor = minor != null;
-    this.bot = bot != null;
-    this.newFlag = newFlag != null;
+    this.anon = anon;
+    this.minor = minor;
+    this.bot = bot;
+    this.newFlag = newFlag;
   }
 
   /**
@@ -282,6 +282,26 @@ public class WatchResponse {
         .toString();
   }
 
-  // TODO implement hashCode and equals like SimpleArticle#hashCode(),
-  // SimpleArticle#equals()
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (!(obj instanceof WatchResponse)) {
+      return false;
+    }
+    WatchResponse that = (WatchResponse) obj;
+    if (this.type != that.type)
+      return false;
+    if (this.type == EditType.LOG)
+      throw new UnsupportedOperationException("Watchlist items of type \"log\" are unimplemented.");
+    return this.revid == that.revid;
+  }
+
+  @Override
+  public int hashCode() {
+    return java.util.Objects.hash(ns, title, user, comment, parsedComment,
+        timestamp, notificationTimestamp, pageid, revid, oldRevid, oldLen, newLen,
+        patrolled, type, anon, minor, bot, newFlag);
+  }
 }
