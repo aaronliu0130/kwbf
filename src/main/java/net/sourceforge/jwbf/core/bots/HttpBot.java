@@ -53,7 +53,7 @@ public class HttpBot {
   }
 
   public static String getPage(final HttpActionClient client) {
-    GetPage gp = new GetPage(client.getUrl());
+    GetPage gp = new GetPage(""); // We want to get example.org instead of example.orgexample.org
     new HttpBot(client).performAction(gp);
     return gp.getText();
   }
