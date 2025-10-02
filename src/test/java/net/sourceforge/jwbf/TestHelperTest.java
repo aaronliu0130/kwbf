@@ -10,6 +10,7 @@ import org.junit.internal.AssumptionViolatedException;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -19,12 +20,7 @@ public class TestHelperTest {
   @Test
   public void testOff() {
     String url = "http://localhost:" + TestHelper.getFreePort();
-    try {
-      TestHelper.assumeReachable(url);
-    } catch (AssumptionViolatedException e) {
-      throw e;
-    }
-    fail(url + " is reachable");
+    assertThrows(AssumptionViolatedException.class, () -> TestHelper.assumeReachable(url));
   }
 
   @Test
