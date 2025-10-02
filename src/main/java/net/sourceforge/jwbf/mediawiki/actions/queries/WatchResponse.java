@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.google.common.base.MoreObjects;
 
@@ -15,7 +15,7 @@ import net.sourceforge.jwbf.mediawiki.actions.queries.WatchList.EditType;
  *
  * @author Rabah Meradi
  */
-@JsonNaming(PropertyNamingStrategy.LowerCaseStrategy.class)
+@JsonNaming(PropertyNamingStrategies.LowerCaseStrategy.class)
 public class WatchResponse {
   private final int ns;
   private final String title;

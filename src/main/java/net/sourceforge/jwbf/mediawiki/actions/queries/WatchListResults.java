@@ -4,12 +4,12 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 import net.sourceforge.jwbf.core.internal.Checked;
 
-@JsonNaming(PropertyNamingStrategy.LowerCaseStrategy.class)
+@JsonNaming(PropertyNamingStrategies.LowerCaseStrategy.class)
 public class WatchListResults {
   static class WatchContinue {
     /** The continue token */

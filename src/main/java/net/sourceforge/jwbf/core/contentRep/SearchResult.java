@@ -3,10 +3,10 @@ package net.sourceforge.jwbf.core.contentRep;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
-@JsonNaming(PropertyNamingStrategy.LowerCaseStrategy.class)
+@JsonNaming(PropertyNamingStrategies.LowerCaseStrategy.class)
 @JsonInclude(Include.NON_DEFAULT)
 public class SearchResult {
   @JsonProperty("ns")
