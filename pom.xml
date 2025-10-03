@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>net.sourceforge</groupId>
-  <artifactId>jwbf</artifactId>
+  <groupId>com.github</groupId>
+  <artifactId>kwbf</artifactId>
   <name>JWBF</name>
-  <version>4.0.1-SNAPSHOT</version>
-  <description>Java Wiki Bot Framework - A Wiki helper</description>
+  <version>3.2.0-SNAPSHOT</version>
+  <description>Java Wiki Bot Framework – A MediaWiki API helper</description>
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
@@ -13,15 +13,15 @@
   </parent>
   <url>http://jwbf.sourceforge.net/</url>
   <issueManagement>
-    <url>https://github.com/eldur/jwbf/issues</url>
+    <url>https://github.com/aaronliu0130/kwbf/issues</url>
     <system>Github</system>
   </issueManagement>
   <developers>
   </developers>
   <scm>
-    <developerConnection>scm:git:git@github.com:eldur/jwbf.git</developerConnection>
-    <connection>scm:git:git@github.com:eldur/jwbf.git</connection>
-    <url>https://github.com/eldur/jwbf</url>
+    <developerConnection>scm:git:git@github.com:aaronliu0130/kwbf.git</developerConnection>
+    <connection>scm:git:git@github.com:aaronliu0130/kwbf.git</connection>
+    <url>https://github.com/aaronliu0130/kwbf</url>
   </scm>
   <licenses>
     <license>

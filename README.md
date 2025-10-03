@@ -1,10 +1,13 @@
+# KWBF...
+The next iteration of the actually object-oriented framework is coming soon... but I'm not so cruel as to move us over
+to a different language (even if it still compiles to JVM) without shipping a functional release in Java first. So, here goes,
+I present, the old README of the old project unchanged with all the old non-fork's links! This README shall be revamped
+and the import path changed (still going to use the old net.sourceforge.jwbf for compatability) after the release of the
+final Java version of KotlinWikiBotFramework. Savor it while it still stands.
+
 # JWBF - JavaWikiBotFramework.
-[![Build Status](https://travis-ci.org/eldur/jwbf.svg?branch=master)](https://travis-ci.org/eldur/jwbf)
-[![Coverage Status](https://coveralls.io/repos/eldur/jwbf/badge.svg?branch=master)](https://coveralls.io/r/eldur/jwbf)
+[![Coverage Status](https://coveralls.io/repos/aaronliu0130/kwbf/badge.svg?branch=main)](https://coveralls.io/r/aaronliu0130/kwbf)
 [![Maven Central](https://img.shields.io/maven-central/v/net.sourceforge/jwbf.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.sourceforge%22%20AND%20a%3A%22jwbf%22)
-<!--
-[![codecov.io](http://codecov.io/github/eldur/jwbf/coverage.svg?branch=master)](http://codecov.io/github/eldur/jwbf?branch=master)
--->
 The Java Wiki Bot Framework is a library to retrieve data from and maintain
 [MediaWiki-based wikis](http://www.mediawiki.org) such as Wikipedia. It has
 packages that handle basic tasks (login, cookies, encoding, token management)
@@ -125,8 +128,8 @@ Here is [one example](#code-sample) of using JWBF to write a bot that can
 retrieve and edit an article on a desired wiki.
 
 More Java examples (e.g. for queries) can be found at
- [unit-](https://github.com/eldur/jwbf/tree/master/src/test/java/net/sourceforge/jwbf) and
- [integration-test packages](https://github.com/eldur/jwbf/tree/master/src/integration-test/java/net/sourceforge/jwbf).
+ [unit-](https://github.com/aaronliu0130/kwbf/tree/master/src/test/java/net/sourceforge/jwbf) and
+ [integration-test packages](https://github.com/aaronliu0130/kwbf/tree/master/src/integration-test/java/net/sourceforge/jwbf).
 
 
 ## Working with Wikimedia
@@ -151,5 +154,5 @@ MediaWikiBot wikiBot = new MediaWikiBot(client);
 * [Mediawiki API Documentation](https://www.mediawiki.org/wiki/API)
 * [Evaluation of JWBF](https://www.mediawiki.org/wiki/API:Client_code/Evaluations/Java_Wiki_Bot_Framework_(JWBF))
 * Wikidata Integration
- * [Fast forwarded test branch](https://github.com/eldur/jwbf/tree/wikidata)
+ * [Fast forwarded test branch](https://github.com/aaronliu0130/kwbf/tree/wikidata)
  * [WikiData-Toolkit](https://github.com/Wikidata/Wikidata-Toolkit/issues/11)
