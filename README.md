@@ -1,3 +1,9 @@
+# KWBF...
+The next iteration of the actually object-oriented framework is coming soon... but I'm not so cruel as to move us over
+to a different language (even if it still compiles to JVM) without shipping a functional release in Java first. So, here goes,
+I present, the old README of the old project unchanged with all the old non-fork's links! This README shall be revamped
+after the release of the final Java version of KotlinWikiBotFramework. Savor it while it still stands.
+
 # JWBF - JavaWikiBotFramework.
 [![Build Status](https://travis-ci.org/eldur/jwbf.svg?branch=master)](https://travis-ci.org/eldur/jwbf)
 [![Coverage Status](https://coveralls.io/repos/eldur/jwbf/badge.svg?branch=master)](https://coveralls.io/r/eldur/jwbf)
