@@ -1,4 +1,4 @@
-net.sourceforge:jwbf:jar:4.0.1-SNAPSHOT
+io.github.aaronliu0130:kwbf:jar:3.2.0-SNAPSHOT
 +- org.jdom:jdom2:jar:2.0.6.1:compile
 +- com.fasterxml.jackson.core:jackson-core:jar:2.20.0:compile
 +- com.fasterxml.jackson.core:jackson-databind:jar:2.20.0:compile

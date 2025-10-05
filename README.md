@@ -81,41 +81,15 @@ Beginning with **jwbf 4.x.x Java 8 is required**
 
 ```xml
 <dependency>
-  <groupId>net.sourceforge</groupId>
+  <groupId>io.github.aaronliu0130</groupId>
   <artifactId>jwbf</artifactId>
-  <version>3.1.1</version>
+  <version>3.1.2</version>
 </dependency>
 ```
 
 If you want to use a different release of JWBF, find your desired version in
 [RELEASES](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.sourceforge%22%20AND%20a%3A%22jwbf%22)
 and change `<version>` to its listed title.
-
-
-#### From [SNAPSHOTS](https://oss.sonatype.org/content/groups/public/net/sourceforge/jwbf/):
-
-Add this to your `<repositories>` section:
-
-```xml
-<repository>
-  <id>sonatype-nexus-snapshots</id>
-  <name>Sonatype Nexus Snapshots</name>
-  <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
-```
-
-Add this to your `<dependencies>` section:
-
-```xml
-<dependency>
-  <groupId>net.sourceforge</groupId>
-  <artifactId>jwbf</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
-</dependency>
-```
 
 If you want to use a different snapshot of JWBF, find your desired version in
 [SNAPSHOTS](https://oss.sonatype.org/content/groups/public/net/sourceforge/jwbf/)
