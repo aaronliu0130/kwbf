@@ -7,7 +7,7 @@ final Java version of KotlinWikiBotFramework. Savor it while it still stands.
 
 # JWBF - JavaWikiBotFramework.
 [![Coverage Status](https://coveralls.io/repos/aaronliu0130/kwbf/badge.svg?branch=main)](https://coveralls.io/r/aaronliu0130/kwbf)
-[![Maven Central](https://img.shields.io/maven-central/v/net.sourceforge/jwbf.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.sourceforge%22%20AND%20a%3A%22jwbf%22)
+[![Maven Central](https://img.shields.io/io.github.aaronliu0130/kwbf)](https://central.sonatype.com/artifact/io.github.aaronliu0130/kwbf)
 The Java Wiki Bot Framework is a library to retrieve data from and maintain
 [MediaWiki-based wikis](http://www.mediawiki.org) such as Wikipedia. It has
 packages that handle basic tasks (login, cookies, encoding, token management)
